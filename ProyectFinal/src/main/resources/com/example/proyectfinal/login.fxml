@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyectfinal.Controller.LoginController">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+    <Label text="Inicio de Sesión"/>
+    <TextField fx:id="usernameField" promptText="Usuario"/>
+    <PasswordField fx:id="passwordField" promptText="Contraseña"/>
+    <Label fx:id="errorLabel" textFill="red"/>
+    <Button text="Ingresar" onAction="#onLogin"/>
+</VBox>
